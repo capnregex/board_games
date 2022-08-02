@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <style>
+      svg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #eee;
+      }
+      rect {
+        stroke: #000;
+        fill: #eee ;
+        stroke-width: 3px;
+        fill-opacity: 0;
+      }
+      circle {
+        stroke: #000;
+        fill: #eee ;
+        stroke-width: 3px;
+        fill-opacity: 1;
+      }
+      circle.center { stroke: #ccc; }
+      circle.red { fill: #f00; }
+      circle.orange { fill: #f90; }
+      circle.yellow { fill: #ff0; }
+      circle.zzz { fill: #9f0; }
+      circle.green { fill: #0f0; }
+      circle.cyan { fill: #0ff; }
+      circle.blue { fill: #00f; }
+      circle.purple { fill: #90f; }
+      circle.mauve { fill: #f0f; }
+      line {
+        stroke: #000;
+        stroke-width: 3px;
+      }
+    </style>
+  </head>
+<body>
+<svg width="3840" height="2160">
+  <rect x="1110" y="270" width="1620" height="1620" />
+  <rect x="1380" y="540" width="1080" height="1080" />
+  <rect x="1650" y="810" width="540" height="540" />
+  <line x1="1110" y1="270" x2="1650" y2="810" />
+  <line x1="1920" y1="270" x2="1920" y2="810" />
+  <line x1="2730" y1="270" x2="2190" y2="810" />
+  <line x1="1110" y1="1080" x2="1650" y2="1080" />
+  <line x1="2730" y1="1080" x2="2190" y2="1080" />
+  <circle cx="1110" cy="270" r="108" class="red" />
+  <circle cx="1920" cy="270" r="108" class="mauve" />
+  <circle cx="2730" cy="270" r="108" class="purple" />
+  <circle cx="1380" cy="540" r="108" class="red" />
+  <circle cx="1920" cy="540" r="108" class="mauve" />
+  <circle cx="2460" cy="540" r="108" class="purple" />
+  <circle cx="1650" cy="810" r="108" class="red" />
+  <circle cx="1920" cy="810" r="108" class="mauve" />
+  <circle cx="2190" cy="810" r="108" class="purple" />
+  <circle cx="1110" cy="1080" r="108" class="orange" />
+  <circle cx="1380" cy="1080" r="108" class="orange" />
+  <circle cx="1650" cy="1080" r="108" class="orange" />
+  <circle class="center" cx="1920" cy="1080" r="108" />
+  <circle cx="2190" cy="1080" r="108" class="blue" />
+  <circle cx="2460" cy="1080" r="108" class="blue" />
+  <circle cx="2730" cy="1080" r="108" class="blue" />
+
+
+  <circle cx="2190" cy="1350" r="108" class="cyan" />
+  <circle cx="1920" cy="1350" r="108" class="green" />
+  <circle cx="1650" cy="1350" r="108" class="yellow"/>
+  <circle cx="2460" cy="1620" r="108" class="cyan"/>
+  <circle cx="1920" cy="1620" r="108" class="green" />
+  <circle cx="1380" cy="1620" r="108" class="yellow" />
+  <circle cx="2730" cy="1890" r="108" class="cyan" />
+  <circle cx="1920" cy="1890" r="108" class="green" />
+  <circle cx="1111" cy="1890" r="108" class="yellow" />
+</svg>
+</body>
+</html>
