@@ -1,0 +1,9 @@
+- center = size / 2
+- step = size / 8
+- steps = (step .. (size - step)).step(step).to_a
+- r = step * 0.4
+%svg{:height => size, :width => size}
+  = render 'morris/radial', min: step, center: center, max: center - step
+  = render 'morris/radial', min: size - step, center: center, max: center + step
+  - 3.times do |i|
+    = render 'morris/ring', min: steps[i], max: steps[-i-1], center: center, r: r

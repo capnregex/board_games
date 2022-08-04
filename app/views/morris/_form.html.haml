@@ -1,0 +1,13 @@
+= form_for @morri do |f|
+  - if @morri.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@morri.errors.count, "error")} prohibited this morri from being saved:"
+      %ul
+        - @morri.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :men
+    = f.number_field :men
+  .actions
+    = f.submit 'Save'

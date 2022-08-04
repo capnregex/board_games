@@ -1,0 +1,24 @@
+%h1 Listing morris
+
+%table
+  %thead
+    %tr
+      %th Men
+      %th
+      %th
+      %th
+
+  %tbody
+    - @morris.each do |morri|
+      %tr
+        %td= morri.men
+        %td= link_to 'Show', morri
+        %td= link_to 'Edit', edit_morri_path(morri)
+        %td= link_to 'Destroy', morri, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Morri', new_morri_path
+
+.morris= render partial: 'board', formats: [:svg], locals: { size: 1600 }
+

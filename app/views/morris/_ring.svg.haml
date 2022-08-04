@@ -1,0 +1,7 @@
+- delta = max - min
+- marks = [min, center, max]
+%rect{x: min, y: min, width: delta, height: delta}
+- marks.each do |x|
+  - marks.each do |y|
+    - next if x == center and y == center
+    %circle{cx: x, cy: y, r: r, data: { controller: 'dot', action: 'click->dot#change' }}
